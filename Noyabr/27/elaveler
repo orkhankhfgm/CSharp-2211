@@ -1,0 +1,14 @@
+Proyekti github'dan öz komputerinizə çəkmək (ilk dəfə)
+1. git clone https://github.com... (proyektin linki olacaq burda)
+
+Komputerinizdə olan mövcud repository'ni (daha öncə clone etdiyiniz) update etmək üçün
+1. git pull
+
+Komputerinizdə olan bir repo üzərindəki dəyişiklikləri github'a göndərmək üçün:
+1. git status
+2. git add .
+3. git commit -m "etdiyiniz deyisiklik barede melumat"
+4. git push
+
+
+NOT: CSharp-2211 repo'suna heç bir zaman heç nə push etmirsiniz.
