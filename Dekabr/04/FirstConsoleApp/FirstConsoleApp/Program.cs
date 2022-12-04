@@ -161,6 +161,66 @@ namespace FirstConsoleApp
              What is Memory management
              */
             #endregion
+
+
+            #region Value Type Variables
+            //Nümunə 1
+            int a;
+            a = 5;
+
+            //Nümunə 2
+            int b;
+            b = 5;
+            b = 2147483647;
+            Console.WriteLine(b);
+
+            //Nümunə 3
+            int i = 2147483647; //int RAM'da 4 byte yer bron edir
+            double x = 500; //double tipi RAM'da 8 byte yer bron edir
+            x = i;
+            x = 150;
+            #endregion
+
+
+            #region Referance Type Variables
+            Student student; //NULL
+            //student.Name = "Orxan";
+
+            student = new Student();
+            student.Name = "Ceyhun";
+            student.Age = 27;
+            student.Point = 78.5;
+            #endregion
+
+
+            #region Assign one Referance Type to another
+            Student otherStudent = new Student();
+            otherStudent.Name = "Babek";
+            otherStudent.Age = 29;
+            otherStudent.Point = 71.6d;
+
+            otherStudent = student;
+
+            //var studentClassNumber = student.ClassRoom.Number;
+            #endregion
+
+
+            #region String helper methods
+            string name1 = "Orxan";
+
+            string c = "5";
+            string d = "6";
+            string v = c + d;
+
+            //int c = 5;
+            //int d = 6;
+            //int v = c + d;
+
+            string employee = "Orkhan Farajov";
+            string upperCase = employee.ToUpper();
+            string lowerCase = employee.ToLower();
+            string partOfString = employee.Substring(2, 4);
+            #endregion
         }
     }
 }
